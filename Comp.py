@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import re
 # df = pd.read_excel("Allan Hancock College.xlsx", skiprows=6, parse_cols="G, H").dropna()
-df = pd.read_excel("Allan Hancock College.xlsx", skiprows=6, parse_cols="B, E, G, H")
+df = pd.read_excel("/Users/yukikuroshima/Desktop/Comp/Allan\ Hancock\ College.xlsx", skiprows=6, parse_cols="B, E, G, H")
 df.columns = ['SJSU_Class', 'SJSU_Unit', 'Class', 'Unit']
 # df.set_index('SJSU_Class', inplace=True)
 # df.replace('', np.NaN, inplace=True)
@@ -13,7 +13,7 @@ print(df)
 # with open('Allan Hancock College.txt') as f:
 #     textDf = f.readlines()
 
-f = open('Allan Hancock College.txt')
+f = open('/Users/yukikuroshima/Desktop/Comp/Allan\ Hancock\ College.txt')
 text = f.readlines()
 f.close()
 
